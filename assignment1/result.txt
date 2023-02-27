@@ -1,0 +1,31 @@
+ shared_buffers
+----------------
+ 64MB
+(1 row)
+
+
+Sat 11 Feb 2023 05:33:14 PM +08
+
+pgbench (15.0)
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 4
+query mode: simple
+number of clients: 10
+number of threads: 10
+maximum number of tries: 1
+duration: 360 s
+number of transactions actually processed: 494047
+number of failed transactions: 0 (0.000%)
+latency average = 7.286 ms
+initial connection time = 37.447 ms
+tps = 1372.419226 (without initial connection time)
+
+Sat 11 Feb 2023 05:39:14 PM +08
+
+ heap_read | heap_hit |       hit_ratio
+-----------+----------+------------------------
+     21889 |  8021595 | 0.99727866680657287315
+(1 row)
+
+
+.\AutoTester.exe ..\..\..\..\..\..\Tests15\source2.txt ..\..\..\..\..\..\Tests15\queries2.txt ..\..\..\..\..\tests\out.xml
